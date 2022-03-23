@@ -1,0 +1,40 @@
+<CSS>
+
+*주석
+ctrl + / : 자동으로 주석 변형
+
+*<style></style> : head안에 생성하여 css작업하기
+
+*우선 순위
+ : 태그 -> class -> id : 순으로 뒤로갈수록 우선순위가 높음
+
+*기본 style
+ - background-color: 색; - 배경색 설정
+ - border: 숫자px solid 색; - 테두리 생성. 테두리 굵기와 색 설정
+ - border-bottom과 같이 원하는 방향에만 테두리 생성 가능.
+ - 폰트 다운 : head안에서 다운받고자 하는 폰트 링크 코드 붙여넣기
+ - 폰트 적용 예시 : 폰트가 적용되기 바라는 style 코드작성에 font-family: 'Lobster', cursive; 의 형식과 같이 폰트 적용코드 붙여넣기
+
+*display
+ - block level element : 공간 전체를 사용함. 기본으로 줄 바꿈이 됨 : h1
+ - inline element : content 크기만을 사용함. 기본으로 줄 바꿈이 안됨 : a, img
+ -> display: inline; or display: block; 으로 조정가능함
+ - none : 없어짐
+
+*여백
+ - padding : content와 테두리 사이의 간격/공간
+ - margin : content의 테두리 바깥의 공간
+ - margin 겹침 현상 : 수직일 경우 margin이 겹침
+
+*분배 (div등으로 공간 설정, 다른 것들도 됨)
+ - display: grid; - 자식들을 분배하는 명령
+ - grid-template-columns: 1fr 1fr 1fr; - 자식들을 순서대로 1:1:1 비율로 분배
+ - grid-template-columns: 100px 1fr 1fr; - 자식들을 순서대로 100px고정 나머지를 1:1 비율로 분배.
+ -> 화면 크기에 따라 100px로 설정된 것은 변함없고, 비율 설정된 것은 크기 변화 있다.
+
+*화면 크기에 따른 반응형 변화
+ - @media all and (min-width: 최소값px){코드작성}
+ - @media all and (max-width: 최대값px){코드작성}
+ - {코드작성} : style을 주고 싶은 태그{style 코드작성} / class는 .클래스이름{style 코드작성} / id는 #id이름{style 코드작성}
+
+
